@@ -46,10 +46,28 @@
                     <view key="view" contentMode="scaleToFill" id="hHr-xb-Q6R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWH-uR-0Ny" customClass="FSCalendar">
+                                <rect key="frame" x="10" y="30" width="355" height="578"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="headerDateFormat" value="yyyy年MM月"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jIP-Ot-9io"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZWH-uR-0Ny" firstAttribute="leading" secondItem="jIP-Ot-9io" secondAttribute="leading" constant="10" id="IYr-LI-6zY"/>
+                            <constraint firstItem="ZWH-uR-0Ny" firstAttribute="top" secondItem="jIP-Ot-9io" secondAttribute="top" constant="10" id="KPV-nn-G6B"/>
+                            <constraint firstItem="jIP-Ot-9io" firstAttribute="trailing" secondItem="ZWH-uR-0Ny" secondAttribute="trailing" constant="10" id="M1w-BO-LqT"/>
+                            <constraint firstItem="jIP-Ot-9io" firstAttribute="bottom" secondItem="ZWH-uR-0Ny" secondAttribute="bottom" constant="10" id="Yan-U9-5Fe"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="カレンダー" image="calendar" catalog="system" selectedImage="calendar" id="Idq-KV-9op"/>
+                    <connections>
+                        <outlet property="calendarView" destination="ZWH-uR-0Ny" id="5U8-Gw-Cwk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSx-DF-tE6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -268,18 +286,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-ns-0DE">
-                                <rect key="frame" x="10" y="55" width="357" height="552"/>
+                                <rect key="frame" x="10" y="55" width="355" height="552"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="95" id="AHx-NE-ZTW" customClass="CustomDustCell" customModule="GomisuteWasurenai" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="357" height="95"/>
+                                        <rect key="frame" x="0.0" y="50" width="355" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AHx-NE-ZTW" id="5yQ-bI-ij8">
-                                            <rect key="frame" x="0.0" y="0.0" width="357" height="95"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リモコン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWJ-2b-D3P">
-                                                    <rect key="frame" x="103" y="12" width="244" height="21"/>
+                                                    <rect key="frame" x="103" y="12" width="242" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -297,7 +315,7 @@
                                                     <rect key="frame" x="12" y="5" width="83" height="81"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2023/12/8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9T-2I-2wh">
-                                                    <rect key="frame" x="176" y="59" width="128" height="21"/>
+                                                    <rect key="frame" x="176" y="59" width="126" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="rpr-bC-IAs"/>
                                                     </constraints>
@@ -358,12 +376,13 @@
                         <viewLayoutGuide key="safeArea" id="ZKz-1y-ihi"/>
                         <color key="backgroundColor" red="0.63137254901960782" green="0.77647058823529413" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="w4q-EH-Nsb" firstAttribute="trailing" secondItem="yHf-ns-0DE" secondAttribute="trailing" id="1uh-gu-k0t"/>
                             <constraint firstItem="yHf-ns-0DE" firstAttribute="top" secondItem="w4q-EH-Nsb" secondAttribute="bottom" constant="8" id="6qS-g9-8bx"/>
                             <constraint firstItem="yHf-ns-0DE" firstAttribute="leading" secondItem="ZKz-1y-ihi" secondAttribute="leading" constant="10" id="cae-Rl-tdH"/>
                             <constraint firstItem="w4q-EH-Nsb" firstAttribute="top" secondItem="Kai-GL-bhz" secondAttribute="topMargin" constant="-8" id="ggK-pR-Lof"/>
+                            <constraint firstItem="ZKz-1y-ihi" firstAttribute="trailing" secondItem="w4q-EH-Nsb" secondAttribute="trailing" constant="10" id="iM4-fl-BGj"/>
                             <constraint firstItem="w4q-EH-Nsb" firstAttribute="leading" secondItem="ZKz-1y-ihi" secondAttribute="leading" constant="279" id="mil-R2-MoS"/>
                             <constraint firstItem="ZKz-1y-ihi" firstAttribute="bottom" secondItem="yHf-ns-0DE" secondAttribute="bottom" constant="11" id="mvi-eB-ucH"/>
+                            <constraint firstItem="ZKz-1y-ihi" firstAttribute="trailing" secondItem="yHf-ns-0DE" secondAttribute="trailing" constant="10" id="vhA-kg-c4c"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="登録したゴミ" image="tray.2" catalog="system" selectedImage="tray.2" id="t3L-ep-It6"/>
@@ -402,7 +421,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="4HB-gh-Oo8">
-                                <rect key="frame" x="207" y="173" width="152" height="35"/>
+                                <rect key="frame" x="207" y="173" width="152" height="34.5"/>
                                 <locale key="locale" localeIdentifier="ja_JP"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="廃棄予定日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ry-6f-gxX">
