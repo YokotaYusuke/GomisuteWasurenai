@@ -19,13 +19,14 @@ GomisuteWasurenaiは鳴海地区限定のゴミの分別アプリです。
 
 1. App StoreからXcodeをインストールし、Xcodeの環境設定を行なってください。
 
+
 2. CocoaPodsをインストールします。
 
 ```
 sudo gem install cocoapods
 ```
 
-3.CocoaPodsのインストールが完了したら、以下のコマンドを実行してください。
+3. CocoaPodsのインストールが完了したら、以下のコマンドを実行してください。
 
 ```
 pod setup
@@ -49,8 +50,9 @@ cd GomisuteWasurenai
 open GomisuteWasurenai.xcworkspace
 ```
 
-7. 実機にアプリをインストールしてください。
+7. あなたのiPhoneにアプリをインストールしてください。
 参考サイト:<https://tech.amefure.com/swift-iphone>
 
-8. あなたのiPhoneをMacに接続し、Buildをしてください。
+
+8. あなたのiPhoneをMacにケーブル接続し、Buildをしてください。
 ![buildの変更](./build-change.png)

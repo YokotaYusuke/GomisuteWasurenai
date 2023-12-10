@@ -383,55 +383,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9w-92-G6L">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9w-92-G6L">
                                 <rect key="frame" x="296" y="10" width="72" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="閉じる"/>
                                 <connections>
                                     <action selector="backButtonAction:" destination="uUh-d3-sha" eventType="touchUpInside" id="PGx-vJ-PAT"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82L-wx-LhU">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82L-wx-LhU">
                                 <rect key="frame" x="16" y="68" width="343" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ILB-kn-7Bz">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ILB-kn-7Bz">
                                 <rect key="frame" x="16" y="122" width="343" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="4HB-gh-Oo8">
-                                <rect key="frame" x="237" y="164" width="122" height="60"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="4HB-gh-Oo8">
+                                <rect key="frame" x="207" y="173" width="152" height="35"/>
                                 <locale key="locale" localeIdentifier="ja_JP"/>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="廃棄予定日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ry-6f-gxX">
-                                <rect key="frame" x="16" y="176" width="110" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="廃棄予定日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ry-6f-gxX">
+                                <rect key="frame" x="16" y="176" width="80" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cn5-mJ-UlL">
-                                <rect key="frame" x="16" y="273" width="343" height="277"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cn5-mJ-UlL">
+                                <rect key="frame" x="16" y="272.5" width="343" height="277.5"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWc-DJ-HvW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWc-DJ-HvW">
                                 <rect key="frame" x="53" y="580" width="269" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="データを保存する"/>
                                 <connections>
                                     <action selector="saveToPhotoLibraryTapped:" destination="uUh-d3-sha" eventType="touchUpInside" id="9Nu-Az-k6d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owi-GE-xTm">
-                                <rect key="frame" x="111" y="230" width="152" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owi-GE-xTm">
+                                <rect key="frame" x="111" y="213.5" width="152" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="ゴミの写真を撮影"/>
                                 <connections>
@@ -441,6 +433,37 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pm7-lA-Y5K"/>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Owi-GE-xTm" firstAttribute="top" secondItem="4HB-gh-Oo8" secondAttribute="bottom" constant="6" id="0r1-gQ-ugW"/>
+                            <constraint firstItem="82L-wx-LhU" firstAttribute="leading" secondItem="Pm7-lA-Y5K" secondAttribute="leading" constant="16" id="6km-lU-vg8"/>
+                            <constraint firstItem="ILB-kn-7Bz" firstAttribute="leading" secondItem="Pm7-lA-Y5K" secondAttribute="leading" constant="16" id="6vF-ps-zKd"/>
+                            <constraint firstItem="MWc-DJ-HvW" firstAttribute="top" secondItem="cn5-mJ-UlL" secondAttribute="bottom" constant="30" id="9zs-Xf-pcd"/>
+                            <constraint firstItem="82L-wx-LhU" firstAttribute="top" secondItem="G9w-92-G6L" secondAttribute="bottom" constant="23" id="Byk-jn-GbC"/>
+                            <constraint firstItem="Pm7-lA-Y5K" firstAttribute="bottom" secondItem="MWc-DJ-HvW" secondAttribute="bottom" constant="52" id="IIK-ZF-3b2"/>
+                            <constraint firstItem="9Ry-6f-gxX" firstAttribute="leading" secondItem="Pm7-lA-Y5K" secondAttribute="leading" constant="16" id="Iux-fL-vqi"/>
+                            <constraint firstItem="Pm7-lA-Y5K" firstAttribute="trailing" secondItem="4HB-gh-Oo8" secondAttribute="trailing" constant="16" id="Ke7-y3-1uD"/>
+                            <constraint firstItem="cn5-mJ-UlL" firstAttribute="top" secondItem="Owi-GE-xTm" secondAttribute="bottom" constant="24" id="NLT-Al-dyX"/>
+                            <constraint firstItem="4HB-gh-Oo8" firstAttribute="leading" secondItem="9Ry-6f-gxX" secondAttribute="trailing" constant="111" id="Nek-mf-xgo"/>
+                            <constraint firstItem="MWc-DJ-HvW" firstAttribute="top" secondItem="cn5-mJ-UlL" secondAttribute="bottom" constant="30" id="Owm-LY-1jZ"/>
+                            <constraint firstItem="G9w-92-G6L" firstAttribute="leading" secondItem="Pm7-lA-Y5K" secondAttribute="leading" constant="296" id="PWV-1o-zmk"/>
+                            <constraint firstItem="Pm7-lA-Y5K" firstAttribute="trailing" secondItem="ILB-kn-7Bz" secondAttribute="trailing" constant="16" id="PiY-n7-fKg"/>
+                            <constraint firstItem="MWc-DJ-HvW" firstAttribute="leading" secondItem="Pm7-lA-Y5K" secondAttribute="leading" constant="53" id="UOF-4X-xAw"/>
+                            <constraint firstItem="Owi-GE-xTm" firstAttribute="leading" secondItem="Pm7-lA-Y5K" secondAttribute="leading" constant="111" id="UUX-G5-6gK"/>
+                            <constraint firstItem="Pm7-lA-Y5K" firstAttribute="trailing" secondItem="Owi-GE-xTm" secondAttribute="trailing" constant="112" id="WMp-TV-dnl"/>
+                            <constraint firstItem="Owi-GE-xTm" firstAttribute="top" secondItem="4HB-gh-Oo8" secondAttribute="bottom" constant="6" id="Y9Y-q0-bBD"/>
+                            <constraint firstItem="ILB-kn-7Bz" firstAttribute="top" secondItem="82L-wx-LhU" secondAttribute="bottom" constant="20" id="ae9-Jr-diJ"/>
+                            <constraint firstItem="4HB-gh-Oo8" firstAttribute="leading" secondItem="9Ry-6f-gxX" secondAttribute="trailing" constant="111" id="bG3-7e-Gcz"/>
+                            <constraint firstItem="9Ry-6f-gxX" firstAttribute="top" secondItem="ILB-kn-7Bz" secondAttribute="bottom" constant="20" id="nVT-RA-YWr"/>
+                            <constraint firstItem="ILB-kn-7Bz" firstAttribute="top" secondItem="82L-wx-LhU" secondAttribute="bottom" constant="20" id="oeO-Mg-atU"/>
+                            <constraint firstItem="Pm7-lA-Y5K" firstAttribute="trailing" secondItem="G9w-92-G6L" secondAttribute="trailing" constant="7" id="ptZ-7t-iGM"/>
+                            <constraint firstItem="Pm7-lA-Y5K" firstAttribute="trailing" secondItem="MWc-DJ-HvW" secondAttribute="trailing" constant="53" id="qa2-kG-eaa"/>
+                            <constraint firstItem="Owi-GE-xTm" firstAttribute="top" secondItem="9Ry-6f-gxX" secondAttribute="bottom" constant="17" id="t4d-6u-r8g"/>
+                            <constraint firstItem="G9w-92-G6L" firstAttribute="top" secondItem="Pm7-lA-Y5K" secondAttribute="top" constant="10" id="u7g-VQ-28H"/>
+                            <constraint firstItem="Pm7-lA-Y5K" firstAttribute="trailing" secondItem="82L-wx-LhU" secondAttribute="trailing" constant="16" id="wZk-cN-F3X"/>
+                            <constraint firstItem="82L-wx-LhU" firstAttribute="top" secondItem="G9w-92-G6L" secondAttribute="bottom" constant="23" id="yBA-Ja-FZF"/>
+                            <constraint firstItem="Pm7-lA-Y5K" firstAttribute="trailing" secondItem="cn5-mJ-UlL" secondAttribute="trailing" constant="16" id="yHu-eO-ZDe"/>
+                            <constraint firstItem="cn5-mJ-UlL" firstAttribute="leading" secondItem="Pm7-lA-Y5K" secondAttribute="leading" constant="16" id="z0N-zz-2NC"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="dustCreateDatePicker" destination="4HB-gh-Oo8" id="eXj-sM-fRl"/>
