@@ -17,7 +17,7 @@ class CalenderViewController: UIViewController,FSCalendarDelegate,FSCalendarData
         // デリゲートの設定
         self.calendarView.dataSource = self
         self.calendarView.delegate = self
-
+        calendarView.register(FSCalendarCell.self, forCellReuseIdentifier: "CELL")
     }
 
     override func didReceiveMemoryWarning() {
@@ -77,7 +77,77 @@ class CalenderViewController: UIViewController,FSCalendarDelegate,FSCalendarData
         else if weekday == 7 {  //土曜日
             return UIColor.blue
         }
-
         return nil
+    }
+    
+    // 曜日に画像を入れる
+    func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage? {
+        let weekday = self.getWeekIdx(date)
+        if weekday == 2 {  // 月曜日
+            // 土曜日に表示するイメージの名前を返す
+            let perfect = UIImage(named: "PET_bottles")
+            let Resize:CGSize = CGSize.init(width: 25, height: 25) // サイズ指定
+            let perfectResize = perfect?.resize(size: Resize)
+            return perfectResize
+        }
+        else if weekday == 3 { // 火曜日
+                // 土曜日に表示するイメージの名前を返す
+                let perfect = UIImage(named: "burnable_garbage")
+                let Resize:CGSize = CGSize.init(width: 25, height: 25) // サイズ指定
+                let perfectResize = perfect?.resize(size: Resize)
+                return perfectResize
+        }
+        else if weekday == 4 { // 水曜日
+                // 土曜日に表示するイメージの名前を返す
+                let perfect = UIImage(named: "battery")
+                let Resize:CGSize = CGSize.init(width: 25, height: 25) // サイズ指定
+                let perfectResize = perfect?.resize(size: Resize)
+                return perfectResize
+        }
+        else if weekday == 6 { // 金曜日
+                // 土曜日に表示するイメージの名前を返す
+                let perfect = UIImage(named: "burnable_garbage")
+                let Resize:CGSize = CGSize.init(width: 25, height: 25) // サイズ指定
+                let perfectResize = perfect?.resize(size: Resize)
+                return perfectResize
+        }
+        return nil
+    }
+    
+    // 枠線をつける
+    func calendar(_ calendar: FSCalendar, cellFor date: Date, at position: FSCalendarMonthPosition) -> FSCalendarCell {
+            let cell = calendar.dequeueReusableCell(withIdentifier: "CELL", for: date, at: position)
+            cell.layer.borderColor = UIColor.gray.cgColor
+            cell.layer.borderWidth = 0.5
+            return cell
+        }
+    
+
+    
+//    func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, subtitleWeekend date: Date) -> String? {
+//        let weekday = self.getWeekIdx(date)
+//        if weekday == 7 {  // 土曜日
+//            // 土曜日に表示するイメージの名前を返す
+//            return "info"
+//        }
+//        return nil
+//    }
+    
+}
+
+extension UIImage {
+    func resize(size _size: CGSize) -> UIImage? {
+        let widthRatio = _size.width / size.width
+        let heightRatio = _size.height / size.height
+        let ratio = widthRatio < heightRatio ? widthRatio : heightRatio
+
+        let resizedSize = CGSize(width: size.width * ratio, height: size.height * ratio)
+
+        UIGraphicsBeginImageContextWithOptions(resizedSize, false, 0.0) // 変更
+        draw(in: CGRect(origin: .zero, size: resizedSize))
+        let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return resizedImage
     }
 }

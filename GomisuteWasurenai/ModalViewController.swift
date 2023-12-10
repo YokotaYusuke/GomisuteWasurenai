@@ -86,17 +86,7 @@ class ModalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
 //        print("dust_nameは\(dustNameTextField.text!)","dust_typeは\(dustTypeTextField.text!)")
         dusts.dust_name = dustNameTextField.text!
         dusts.dust_type = dustTypeTextField.text!
-        
-        
-//        if let NewFileURL = fileURL {
-//            let urlString = fileURL.absoluteString
-//            print(urlString)
-//            // ここで urlString を利用できます
-//        }
-//        print(fileURL.absoluteString)
         dusts.dust_image = fileURL
-        
-//        print("filePathは\(dusts.dust_image)")
         
         // 日付のフォーマットを変更する
         let inputDate = dustCreateDatePicker.date
@@ -111,14 +101,6 @@ class ModalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         }
         dismiss(animated: true,completion: nil)
     }
-    
-//    @objc func image(image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
-//        if let error = error {
-//            print("Failed to save photo: \(error)")
-//        } else {
-//            print("Photo saved successfully.")
-//        }
-//    }
        
     // ゴミの写真を撮影ボタンをタップしたらカメラを起動するアクション
     @IBAction func takePhotoTapped(_ sender: Any) {

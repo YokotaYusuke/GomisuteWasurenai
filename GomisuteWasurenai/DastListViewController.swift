@@ -10,11 +10,9 @@ import RealmSwift
 
 class DastListViewController: UIViewController,UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
-    
-    
-    
+
     var dusts: [Dusts] = [] // ゴミの登録データ
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         _ = try! Realm()
@@ -61,18 +59,6 @@ class DastListViewController: UIViewController,UITableViewDataSource {
             }
         return cell
     }
-     
-//    @IBAction func addButtonAction(_ sender: Any) {
-//        let dusts = Dusts()
-//        dusts.dust_name = textField1.text!
-//        dusts.dust_type = textField2.text!
-//        try! realm.write {
-//            realm.add(dusts)
-//        }
-//        textField1.text = ""
-//        textField2.text = ""
-//        tableView.reloadData()
-//    }
     
     // スワイプして削除するアクション
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
