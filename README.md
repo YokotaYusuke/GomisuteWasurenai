@@ -1,25 +1,10 @@
-# GomisuteWasurenai
-
-GomisuteWasurenaiは鳴海地区限定のゴミの分別アプリです。
-
-以下の困り事を解決する為に開発しました。
-・何曜日が何ゴミを捨てるのかいまだに覚えられないので、スマホですぐに確認出来るようにしたい。
-・不燃ゴミの収集日が月1回しかなく、出し忘れてしまいゴミが溜まってしまう。
-・自宅の収納棚に貼ってある、分別マップをデジタル化したい。
-
-# サービスの URL
-
-
-# セットアップ方法
-
-1. まずは SSH キーをコピーして、あなたの環境にクローンしてください。
-
-```
-git clone SSH key
-```
-
-2. クローンしたファイルへ移動します。
-
-```
-cd dress-up-cat
-```
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>
