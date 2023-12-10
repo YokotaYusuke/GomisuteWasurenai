@@ -77,6 +77,7 @@
 		C7C499412B23F83C004D0140 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		C7C499432B246064004D0140 /* CustomDustCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDustCell.swift; sourceTree = "<group>"; };
 		C7C499472B24B06C004D0140 /* CustomEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEntryCell.swift; sourceTree = "<group>"; };
+		C7C4994C2B2570C8004D0140 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CF42BC47897E8601AB734E35 /* Pods-GomisuteWasurenai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GomisuteWasurenai.release.xcconfig"; path = "Target Support Files/Pods-GomisuteWasurenai/Pods-GomisuteWasurenai.release.xcconfig"; sourceTree = "<group>"; };
 		FDE15BF63BEA2845E97D6913 /* Pods-GomisuteWasurenaiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GomisuteWasurenaiTests.debug.xcconfig"; path = "Target Support Files/Pods-GomisuteWasurenaiTests/Pods-GomisuteWasurenaiTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +136,7 @@
 		C73747412B21ACC800DBB69B = {
 			isa = PBXGroup;
 			children = (
+				C7C4994C2B2570C8004D0140 /* README.md */,
 				C737474C2B21ACC900DBB69B /* GomisuteWasurenai */,
 				C73747632B21ACCA00DBB69B /* GomisuteWasurenaiTests */,
 				C737476D2B21ACCA00DBB69B /* GomisuteWasurenaiUITests */,
