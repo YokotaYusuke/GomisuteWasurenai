@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4A279CEB-C0EC-4E9E-B1D3-4617FB62ADAB"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0EAA838-F6DE-43FC-86B8-C2E49034BFC4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GomisuteWasurenai/DastListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "DastListViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F0EAA838-F6DE-43FC-86B8-C2E49034BFC4 - c7ffc81bed6f2fc9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GomisuteWasurenai.DastListViewController.dusts.getter : Swift.Array&lt;GomisuteWasurenai.Dusts&gt;"
+                  moduleName = "GomisuteWasurenai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yokota/Desktop/work/BTC5/%E6%88%90%E6%9E%9C%E7%89%A9/%E5%A4%9A%E8%A8%80%E8%AA%9E%E3%83%95%E3%82%9A%E3%83%AD%E3%82%B7%E3%82%99%E3%82%A7%E3%82%AF%E3%83%88/GomisuteWasurenai/GomisuteWasurenai/DastListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "F0EAA838-F6DE-43FC-86B8-C2E49034BFC4 - 157a4a25a9c53db5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GomisuteWasurenai.DastListViewController.dusts.setter : Swift.Array&lt;GomisuteWasurenai.Dusts&gt;"
+                  moduleName = "GomisuteWasurenai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yokota/Desktop/work/BTC5/%E6%88%90%E6%9E%9C%E7%89%A9/%E5%A4%9A%E8%A8%80%E8%AA%9E%E3%83%95%E3%82%9A%E3%83%AD%E3%82%B7%E3%82%99%E3%82%A7%E3%82%AF%E3%83%88/GomisuteWasurenai/GomisuteWasurenai/DastListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "F0EAA838-F6DE-43FC-86B8-C2E49034BFC4 - 5ffd50cc339bb9a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GomisuteWasurenai.DastListViewController.dusts.modify : Swift.Array&lt;GomisuteWasurenai.Dusts&gt;"
+                  moduleName = "GomisuteWasurenai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yokota/Desktop/work/BTC5/%E6%88%90%E6%9E%9C%E7%89%A9/%E5%A4%9A%E8%A8%80%E8%AA%9E%E3%83%95%E3%82%9A%E3%83%AD%E3%82%B7%E3%82%99%E3%82%A7%E3%82%AF%E3%83%88/GomisuteWasurenai/GomisuteWasurenai/DastListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "F0EAA838-F6DE-43FC-86B8-C2E49034BFC4 - 95b25d4172bc0db3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GomisuteWasurenai.DastListViewController.dusts.modify : Swift.Array&lt;GomisuteWasurenai.Dusts&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "GomisuteWasurenai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yokota/Desktop/work/BTC5/%E6%88%90%E6%9E%9C%E7%89%A9/%E5%A4%9A%E8%A8%80%E8%AA%9E%E3%83%95%E3%82%9A%E3%83%AD%E3%82%B7%E3%82%99%E3%82%A7%E3%82%AF%E3%83%88/GomisuteWasurenai/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "F0EAA838-F6DE-43FC-86B8-C2E49034BFC4 - 4c2534dae6fee1d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GomisuteWasurenai.DastListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; GomisuteWasurenai.DastListViewController"
+                  moduleName = "GomisuteWasurenai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yokota/Desktop/work/BTC5/%E6%88%90%E6%9E%9C%E7%89%A9/%E5%A4%9A%E8%A8%80%E8%AA%9E%E3%83%95%E3%82%9A%E3%83%AD%E3%82%B7%E3%82%99%E3%82%A7%E3%82%AF%E3%83%88/GomisuteWasurenai/GomisuteWasurenai/DastListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "F0EAA838-F6DE-43FC-86B8-C2E49034BFC4 - 7981cd38de698366"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GomisuteWasurenai.DastListViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GomisuteWasurenai.DastListViewController&gt;"
+                  moduleName = "GomisuteWasurenai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yokota/Desktop/work/BTC5/%E6%88%90%E6%9E%9C%E7%89%A9/%E5%A4%9A%E8%A8%80%E8%AA%9E%E3%83%95%E3%82%9A%E3%83%AD%E3%82%B7%E3%82%99%E3%82%A7%E3%82%AF%E3%83%88/GomisuteWasurenai/GomisuteWasurenai/DastListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "208">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

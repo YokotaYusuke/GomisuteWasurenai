@@ -1,0 +1,6 @@
+framework module Pods_GomisuteWasurenaiTests {
+  umbrella header "Pods-GomisuteWasurenaiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
