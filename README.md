@@ -12,31 +12,45 @@ GomisuteWasurenaiは鳴海地区限定のゴミの分別アプリです。
 
 # セットアップ方法
 
-### カメラ機能を使用しますので、お手元のiPhoneをMacへ接続して実機にBuildしてください。
-### 実機を使用しない場合カメラ機能が使えず、ゴミのデータ保存ができません。
+##### カメラ機能を使用しますので、お手元のiPhoneをMacへ接続して実機にBuildしてください。
+##### 実機を使用しない場合カメラ機能が使えず、ゴミのデータ保存ができません。
 
-0. App StoreからXcodeをインストールし、Xcodeの環境設定を行なってください。
 
-1. SSH キーをコピーして、あなたの環境にクローンしてください。
+
+1. App StoreからXcodeをインストールし、Xcodeの環境設定を行なってください。
+
+2. CocoaPodsをインストールします。
+
+```
+sudo gem install cocoapods
+```
+
+3.CocoaPodsのインストールが完了したら、以下のコマンドを実行してください。
+
+```
+pod setup
+```
+
+4. SSH キーをコピーして、あなたの環境にクローンしてください。
 
 ```
 git clone <SSH key>
 ```
 
-2. cdコマンドでクローンしたファイルへ移動します。
+5. cdコマンドでクローンしたファイルへ移動します。
 
 ```
 cd GomisuteWasurenai 
 ```
 
-3. openコマンドで.xcworkspaceファイルを開きます。
+6. openコマンドで.xcworkspaceファイルを開きます。
 
 ```
 open GomisuteWasurenai.xcworkspace
 ```
 
-4. Buildを行う端末をあなたのiPhoneに変更し、Buildをしてください。
+7. 実機にアプリをインストールしてください。
+参考サイト:<https://tech.amefure.com/swift-iphone>
 
-### infoの設定
-
-![infoの設定](./info-setting.png)
+8. あなたのiPhoneをMacに接続し、Buildをしてください。
+![buildの変更](./build-change.png)
