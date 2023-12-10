@@ -9,8 +9,7 @@ import UIKit
 import RealmSwift
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    let realm = try! Realm()
+       
     var dusts: [Dusts] = [] // ゴミの登録データ
     var dustsData: [DustsData] = [] // ゴミの種類データ
     var currentDate = Date()
@@ -28,6 +27,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // migrationを実行
+        let config = Realm.Configuration(schemaVersion: 2) // #1
+        Realm.Configuration.defaultConfiguration = config // #2
+        
+        let realm = try! Realm()
         
         myDatePicker.datePickerMode = .date
         myDatePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for: .valueChanged)
@@ -77,6 +82,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 //        print("selectedDate:\(filterFormattedDate)")
 //        print("dusts:\(dusts)")
         // もう一回全て取得
+        let realm = try! Realm()
         dusts = Array(realm.objects(Dusts.self))
         let filteredData = dusts.filter { $0.dust_create == filterFormattedDate }
 //        print("filteredData:\(filteredData)")
@@ -101,6 +107,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 //        print("selectedDate:\(filterFormattedDate)")
 //        print("dusts:\(dusts)")
         // もう一回全て取得
+        let realm = try! Realm()
         dusts = Array(realm.objects(Dusts.self))
         let filteredData = dusts.filter { $0.dust_create == filterFormattedDate }
 //        print("filteredData:\(filteredData)")

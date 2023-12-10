@@ -11,17 +11,19 @@ import RealmSwift
 class DastListViewController: UIViewController,UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
-    let realm = try! Realm()
+    
     
     var dusts: [Dusts] = [] // ゴミの登録データ
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        _ = try! Realm()
 //        print("全てのデータ\(dustsData)")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        let realm = try! Realm()
         let result = realm.objects(Dusts.self)
         dusts = Array(result)
         tableView.reloadData()
@@ -29,6 +31,7 @@ class DastListViewController: UIViewController,UITableViewDataSource {
     
     // テーブルの行数を決定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let realm = try! Realm()
         let dustsData = realm.objects(Dusts.self)
         return dustsData.count
     }
@@ -37,6 +40,7 @@ class DastListViewController: UIViewController,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      
         let cell: CustomDustCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomDustCell
+        let realm = try! Realm()
         let dustsData = realm.objects(Dusts.self)
         cell.dustNameLabel.text = "\(dustsData[indexPath.row].dust_name)"
         cell.dustTypeLabel.text = "\(dustsData[indexPath.row].dust_type)"
