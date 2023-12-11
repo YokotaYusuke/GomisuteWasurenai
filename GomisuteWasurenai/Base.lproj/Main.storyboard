@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -175,12 +176,14 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="廃却予定日:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDH-3m-54o">
                                                     <rect key="frame" x="93" y="52" width="55" height="22"/>
+                                                    <color key="tintColor" name="AccentColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" systemColor="tintColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023/12/09(土)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8R-l6-Lb9">
                                                     <rect key="frame" x="154" y="52" width="158" height="22"/>
+                                                    <color key="tintColor" name="AccentColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" systemColor="tintColor"/>
                                                     <nil key="highlightedColor"/>
@@ -243,7 +246,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="HX5-JB-BD9">
-                                <rect key="frame" x="48" y="27" width="94" height="25"/>
+                                <rect key="frame" x="41" y="27" width="130" height="25"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <locale key="locale" localeIdentifier="ja_JP"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登録したゴミがあればこちらに表示されます。" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptd-G1-oID">
@@ -265,7 +269,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(土)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxB-gA-A0I">
-                                <rect key="frame" x="144" y="27" width="27" height="25"/>
+                                <rect key="frame" x="174" y="27" width="27" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -275,25 +279,24 @@
                         <color key="backgroundColor" white="0.93458340843240695" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="systemBrownColor"/>
                         <constraints>
-                            <constraint firstItem="VxB-gA-A0I" firstAttribute="leading" secondItem="HX5-JB-BD9" secondAttribute="trailing" constant="2" id="0uU-Rt-r38"/>
                             <constraint firstItem="yC8-RJ-IvU" firstAttribute="trailing" secondItem="65A-aM-VNk" secondAttribute="trailing" id="1W8-BB-8NG"/>
                             <constraint firstItem="MFy-Pt-tLw" firstAttribute="top" secondItem="yC8-RJ-IvU" secondAttribute="bottom" constant="6.5" id="1WJ-Si-hb0"/>
                             <constraint firstItem="yC8-RJ-IvU" firstAttribute="leading" secondItem="65A-aM-VNk" secondAttribute="leading" id="AYf-qG-Wkg"/>
                             <constraint firstItem="yC8-RJ-IvU" firstAttribute="top" secondItem="xWy-pg-9uO" secondAttribute="bottom" constant="8" id="Bjm-lv-ACg"/>
-                            <constraint firstItem="HX5-JB-BD9" firstAttribute="leading" secondItem="xWy-pg-9uO" secondAttribute="trailing" constant="8" id="Clu-M7-EVg"/>
                             <constraint firstItem="VxB-gA-A0I" firstAttribute="top" secondItem="SDt-1h-ZEa" secondAttribute="top" constant="7" id="Dt8-Tf-jLM"/>
                             <constraint firstItem="HX5-JB-BD9" firstAttribute="top" secondItem="SDt-1h-ZEa" secondAttribute="top" constant="7" id="EOx-WY-Rkq"/>
                             <constraint firstItem="SDt-1h-ZEa" firstAttribute="bottom" secondItem="65A-aM-VNk" secondAttribute="bottom" constant="100" id="F65-gq-krq"/>
-                            <constraint firstItem="SDt-1h-ZEa" firstAttribute="trailing" secondItem="VxB-gA-A0I" secondAttribute="trailing" constant="204" id="FAu-y6-Kag"/>
                             <constraint firstItem="65A-aM-VNk" firstAttribute="top" secondItem="fyB-Y2-kHP" secondAttribute="bottom" constant="3" id="Idt-xT-ZrQ"/>
+                            <constraint firstItem="HX5-JB-BD9" firstAttribute="leading" secondItem="xWy-pg-9uO" secondAttribute="trailing" constant="1" id="IpA-Sd-8Ct"/>
                             <constraint firstItem="xWy-pg-9uO" firstAttribute="leading" secondItem="yC8-RJ-IvU" secondAttribute="leading" id="LgR-nW-qBt"/>
-                            <constraint firstItem="HX5-JB-BD9" firstAttribute="leading" secondItem="xWy-pg-9uO" secondAttribute="trailing" constant="8" id="O4M-b3-yj9"/>
+                            <constraint firstItem="VxB-gA-A0I" firstAttribute="leading" secondItem="HX5-JB-BD9" secondAttribute="trailing" constant="3" id="XQ9-fF-wc3"/>
                             <constraint firstItem="Ptd-G1-oID" firstAttribute="leading" secondItem="MFy-Pt-tLw" secondAttribute="leading" id="XqW-4E-2dl"/>
+                            <constraint firstItem="VxB-gA-A0I" firstAttribute="leading" secondItem="HX5-JB-BD9" secondAttribute="trailing" constant="3" id="ZFa-rq-iw0"/>
                             <constraint firstItem="xWy-pg-9uO" firstAttribute="firstBaseline" secondItem="VxB-gA-A0I" secondAttribute="firstBaseline" constant="1" id="bGP-oV-EOg"/>
                             <constraint firstItem="SDt-1h-ZEa" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fyB-Y2-kHP" secondAttribute="trailing" symbolic="YES" id="dGd-HL-hwC"/>
-                            <constraint firstItem="HX5-JB-BD9" firstAttribute="leading" secondItem="xWy-pg-9uO" secondAttribute="trailing" constant="8" id="eso-cn-sh4"/>
                             <constraint firstItem="SDt-1h-ZEa" firstAttribute="trailing" secondItem="Ptd-G1-oID" secondAttribute="trailing" constant="10" id="fee-LC-s2d"/>
                             <constraint firstItem="yC8-RJ-IvU" firstAttribute="leading" secondItem="SDt-1h-ZEa" secondAttribute="leading" constant="10" id="h5P-ZS-DBX"/>
+                            <constraint firstItem="HX5-JB-BD9" firstAttribute="leading" secondItem="xWy-pg-9uO" secondAttribute="trailing" constant="1" id="hNa-sA-FG9"/>
                             <constraint firstItem="SDt-1h-ZEa" firstAttribute="bottom" secondItem="Ptd-G1-oID" secondAttribute="bottom" constant="70" id="ofF-au-cvV"/>
                             <constraint firstItem="MFy-Pt-tLw" firstAttribute="top" secondItem="CUP-Nx-kyw" secondAttribute="top" constant="284" id="ogA-IV-bJC"/>
                             <constraint firstItem="xWy-pg-9uO" firstAttribute="top" secondItem="SDt-1h-ZEa" secondAttribute="top" constant="8" id="p3k-R9-S8k"/>
@@ -304,6 +307,7 @@
                             <constraint firstItem="yC8-RJ-IvU" firstAttribute="leading" secondItem="fyB-Y2-kHP" secondAttribute="leading" id="veH-Qp-d7j"/>
                             <constraint firstItem="yC8-RJ-IvU" firstAttribute="top" secondItem="VxB-gA-A0I" secondAttribute="bottom" constant="8.5" id="xkT-sM-fks"/>
                             <constraint firstItem="Ptd-G1-oID" firstAttribute="leading" secondItem="SDt-1h-ZEa" secondAttribute="leading" constant="10" id="yz1-L7-tRI"/>
+                            <constraint firstItem="SDt-1h-ZEa" firstAttribute="trailing" secondItem="VxB-gA-A0I" secondAttribute="trailing" constant="174" id="zR5-0U-VeA"/>
                             <constraint firstItem="yC8-RJ-IvU" firstAttribute="top" secondItem="HX5-JB-BD9" secondAttribute="bottom" constant="8.5" id="zVE-jz-c1O"/>
                         </constraints>
                     </view>
@@ -346,7 +350,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="廃却予定日:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNZ-Au-qHD">
                                                     <rect key="frame" x="103" y="59" width="65" height="21"/>
-                                                    <color key="tintColor" systemColor="systemBrownColor"/>
+                                                    <color key="tintColor" systemColor="linkColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="9Kf-e9-ay6"/>
                                                     </constraints>
@@ -365,12 +369,12 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2023/12/8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9T-2I-2wh">
                                                     <rect key="frame" x="161" y="59" width="126" height="21"/>
-                                                    <color key="tintColor" systemColor="systemBrownColor"/>
+                                                    <color key="tintColor" systemColor="linkColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="rpr-bC-IAs"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" systemColor="systemBrownColor"/>
+                                                    <color key="textColor" systemColor="systemBlueColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -578,11 +582,20 @@
         <image name="info" width="500" height="500"/>
         <image name="magazine" catalog="system" width="110" height="128"/>
         <image name="tray.2" catalog="system" width="128" height="115"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
