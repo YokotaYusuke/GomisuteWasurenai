@@ -18,6 +18,13 @@ class CalenderViewController: UIViewController,FSCalendarDelegate,FSCalendarData
         self.calendarView.dataSource = self
         self.calendarView.delegate = self
         calendarView.register(FSCalendarCell.self, forCellReuseIdentifier: "CELL")
+        self.calendarView.calendarWeekdayView.weekdayLabels[0].text = "日"
+        self.calendarView.calendarWeekdayView.weekdayLabels[1].text = "月"
+        self.calendarView.calendarWeekdayView.weekdayLabels[2].text = "火"
+        self.calendarView.calendarWeekdayView.weekdayLabels[3].text = "水"
+        self.calendarView.calendarWeekdayView.weekdayLabels[4].text = "木"
+        self.calendarView.calendarWeekdayView.weekdayLabels[5].text = "金"
+        self.calendarView.calendarWeekdayView.weekdayLabels[6].text = "土"
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,6 +90,8 @@ class CalenderViewController: UIViewController,FSCalendarDelegate,FSCalendarData
     // 曜日に画像を入れる
     func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage? {
         let weekday = self.getWeekIdx(date)
+        let dayOfMonth = Calendar.current.component(.day, from: date)
+        
         if weekday == 2 {  // 月曜日
             // 土曜日に表示するイメージの名前を返す
             let perfect = UIImage(named: "PET_bottles")
@@ -93,21 +102,29 @@ class CalenderViewController: UIViewController,FSCalendarDelegate,FSCalendarData
         else if weekday == 3 { // 火曜日
                 // 土曜日に表示するイメージの名前を返す
                 let perfect = UIImage(named: "burnable_garbage")
-                let Resize:CGSize = CGSize.init(width: 25, height: 25) // サイズ指定
+                let Resize:CGSize = CGSize.init(width: 15, height: 15) // サイズ指定
                 let perfectResize = perfect?.resize(size: Resize)
                 return perfectResize
+        }
+        else if weekday == 4 && dayOfMonth >= 15 && dayOfMonth <= 21 { // 第3水曜日
+                // 第3水曜日に表示するイメージの名前を返す
+                return UIImage(named: "bulky_garbage")?.resize(size: CGSize(width: 27, height: 27))
+        }
+        else if weekday == 4 && dayOfMonth >= 22 && dayOfMonth <= 28 { // 第4水曜日
+                // 第4水曜日に表示するイメージの名前を返す
+                return UIImage(named: "Non-burnable_garbage")?.resize(size: CGSize(width: 27, height: 27))
         }
         else if weekday == 4 { // 水曜日
                 // 土曜日に表示するイメージの名前を返す
                 let perfect = UIImage(named: "battery")
-                let Resize:CGSize = CGSize.init(width: 25, height: 25) // サイズ指定
+                let Resize:CGSize = CGSize.init(width: 15, height: 15) // サイズ指定
                 let perfectResize = perfect?.resize(size: Resize)
                 return perfectResize
         }
         else if weekday == 6 { // 金曜日
                 // 土曜日に表示するイメージの名前を返す
                 let perfect = UIImage(named: "burnable_garbage")
-                let Resize:CGSize = CGSize.init(width: 25, height: 25) // サイズ指定
+                let Resize:CGSize = CGSize.init(width: 15, height: 15) // サイズ指定
                 let perfectResize = perfect?.resize(size: Resize)
                 return perfectResize
         }
@@ -116,22 +133,13 @@ class CalenderViewController: UIViewController,FSCalendarDelegate,FSCalendarData
     
     // 枠線をつける
     func calendar(_ calendar: FSCalendar, cellFor date: Date, at position: FSCalendarMonthPosition) -> FSCalendarCell {
+        _ = self.getWeekIdx(date)
             let cell = calendar.dequeueReusableCell(withIdentifier: "CELL", for: date, at: position)
-            cell.layer.borderColor = UIColor.gray.cgColor
-            cell.layer.borderWidth = 0.5
+//          cell.layer.cornerRadius = 8
+            cell.layer.borderColor = UIColor.lightGray.cgColor
+            cell.layer.borderWidth = 0.4
             return cell
-        }
-    
-
-    
-//    func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, subtitleWeekend date: Date) -> String? {
-//        let weekday = self.getWeekIdx(date)
-//        if weekday == 7 {  // 土曜日
-//            // 土曜日に表示するイメージの名前を返す
-//            return "info"
-//        }
-//        return nil
-//    }
+    }
     
 }
 
